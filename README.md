@@ -2,6 +2,10 @@
 
 ## Description
 
+- Unary operators: `plot = +`, `plot twist = -`, `reverse movie = not`.
+- Binary operators: `won oscars with = *`, `lost oscars from = /`, `would be nicer with = concatenation`, `make new movie with = +`, `wrong director, sorry = -`, `belongs to the same saga as = ==`, `better rated than = >`, `worst rated than = <`, `any streaming between = or`, `all streaming between = and`.
+- Other operators: `does (Netflix | PrimeVideo | Disney+) have ... ? = if`, `only Bluray = else`, `loop scene = while`, `watch movie = print`, `select movie = input`, `movie ... = variable declaration`.
+
 ## Syntax Diagram
 ![Syntax Diagram](syntax_diagram.png)
 
@@ -19,8 +23,8 @@ STATEMENT = (
 BOOL_EXPRESSION = "any streaming between", BOOL_TERM, ",", BOOL_TERM, {",", BOOL_TERM} ;
 BOOL_TERM = "all streaming between", RELATIONAL_EXPRESSION, ",", RELATIONAL_EXPRESSION, {",", RELATIONAL_EXPRESSION} ;
 RELATIONAL_EXPRESSION = EXPRESSION, {("belongs to the same saga as" | "better rated than" | "worst rated than"), EXPRESSION} ;
-EXPRESSION = TERM, {("make new movie with" | "wrong director, sorry"), TERM} ;
-TERM = FACTOR, {("won oscars with" | "lost oscars from" | "would be nicer with"), FACTOR} ;
+EXPRESSION = TERM, {("make new movie with" | "wrong director, sorry" | "would be nicer with"), TERM} ;
+TERM = FACTOR, {("won oscars with" | "lost oscars from"), FACTOR} ;
 FACTOR = NUMBER | IDENTIFIER | ("plot" | "plot twist" | "reverse movie"), FACTOR | "(", BOOL_EXPRESSION, ")" | "select movie" ;
 IDENTIFIER = LETTER, {LETTER | DIGIT | "_"} ;
 NUMBER = DIGIT, {DIGIT} ;
