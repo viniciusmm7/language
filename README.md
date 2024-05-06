@@ -18,7 +18,7 @@ STATEMENT = (
     "movie", IDENTIFIER, ( | "=", BOOL_EXP) |
     "watch movie", BOOL_EXPRESSION), ";" |
     ("loop scene", BOOL_EXPRESSION, "{", {STATEMENT} |
-    "does", ("Netflix" | "PrimeVideo" | "Disney+"), "have", BOOL_EXPRESSION, "?", "{", {STATEMENT}, {"only Bluray", "{", {STATEMENT}, "}"}), "}"
+    "does", ("Netflix" | "PrimeVideo" | "Disney+"), "have", BOOL_EXPRESSION, "?", "{", {STATEMENT}, ("}", "only Bluray", "{", {STATEMENT} | )), "}"
 ) ;
 BOOL_EXPRESSION = "any streaming between", BOOL_TERM, ",", BOOL_TERM, {",", BOOL_TERM} ;
 BOOL_TERM = "all streaming between", RELATIONAL_EXPRESSION, ",", RELATIONAL_EXPRESSION, {",", RELATIONAL_EXPRESSION} ;
