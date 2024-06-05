@@ -9,7 +9,7 @@
 ## Syntax Diagram
 ![Syntax Diagram](syntax_diagram.png)
 
-## ebnf
+## EBNF
 ```
 BLOCK = {STATEMENT} ;
 STATEMENT = (
