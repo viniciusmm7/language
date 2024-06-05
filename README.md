@@ -13,19 +13,19 @@
 ```
 BLOCK = {STATEMENT} ;
 STATEMENT = (
-    "\n" |
+    ("\n" | ";") |
     (IDENTIFIER, "=", BOOL_EXPRESSION |
     "movie", IDENTIFIER, ( | "=", BOOL_EXP) |
     "watch movie", BOOL_EXPRESSION), ";" |
     ("loop scene", BOOL_EXPRESSION, "{", {STATEMENT} |
-    "does", ("Netflix" | "PrimeVideo" | "Disney+"), "have", BOOL_EXPRESSION, "?", "{", {STATEMENT}, ("}", "only Bluray", "{", {STATEMENT} | )), "}"
+    "does", ("Netflix" | "PrimeVideo" | "DisneyPlus"), "have", BOOL_EXPRESSION, "?", "{", {STATEMENT}, ("}", "only Bluray", "{", {STATEMENT} | )), "}"
 ) ;
-BOOL_EXPRESSION = "any streaming between", BOOL_TERM, ",", BOOL_TERM, {",", BOOL_TERM} ;
-BOOL_TERM = "all streaming between", RELATIONAL_EXPRESSION, ",", RELATIONAL_EXPRESSION, {",", RELATIONAL_EXPRESSION} ;
+BOOL_EXPRESSION = (BOOL_TEM | "any streaming between", BOOL_TERM, ",", BOOL_TERM) ;
+BOOL_TERM = (RELATIONAL_EXPRESSION | "all streaming between", RELATIONAL_EXPRESSION, ",", RELATIONAL_EXPRESSION) ;
 RELATIONAL_EXPRESSION = EXPRESSION, {("belongs to the same saga as" | "better rated than" | "worst rated than"), EXPRESSION} ;
-EXPRESSION = TERM, {("make new movie with" | "wrong director, sorry" | "would be nicer with"), TERM} ;
+EXPRESSION = TERM, {("make new movie with" | "wrong director, sorry"), TERM} ;
 TERM = FACTOR, {("won oscars with" | "lost oscars from"), FACTOR} ;
-FACTOR = NUMBER | IDENTIFIER | ("plot" | "plot twist" | "reverse movie"), FACTOR | "(", BOOL_EXPRESSION, ")" | "select movie" ;
+FACTOR = NUMBER | IDENTIFIER | ("plot" | "plot twist" | "reverse movie"), FACTOR | "(", BOOL_EXPRESSION, ")" | "select movie()" ;
 IDENTIFIER = LETTER, {LETTER | DIGIT | "_"} ;
 NUMBER = DIGIT, {DIGIT} ;
 LETTER = LOWERCASE | UPPERCASE ;
