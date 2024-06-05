@@ -1,0 +1,12 @@
+movie tron_ares;
+movie tron_legacy = 2010;
+tron_ares = 2025;
+
+movie next_tron = select movie();  // input from user
+
+// if next_tron > tron_legacy + tron_ares
+does DisneyPlus have next_tron better rated than tron_legacy make new movie with tron_ares? {
+    watch movie(tron_ares);
+} only Bluray {
+    watch movie(tron_legacy);
+}

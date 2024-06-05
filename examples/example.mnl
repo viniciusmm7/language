@@ -1,0 +1,59 @@
+// C++ code:
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int ice_age;
+//     int shrek;
+//     int ice_age_shrek = 0;
+//     int titanic;
+//     cin >> titanic;
+//     int zero = 0;
+//     int one = zero + 1;
+//
+//     ice_age = 2002;
+//     shrek = 2001;
+//
+//     if ((ice_age || shrek) == 2003) {
+//         if ((ice_age && shrek) == 2000) {
+//             ice_age_shrek = ice_age + shrek;
+//             cout << ice_age_shrek << endl;
+//         }
+//     }
+//
+//     while (ice_age_shrek > titanic && titanic > 0) {
+//         titanic = titanic * ice_age_shrek;
+//     }
+//
+//     cout << titanic << endl;
+//
+//     return 0;
+// }
+
+// Movie Night Lang code: (only works with integers)
+movie ice_age;
+movie shrek;
+movie ice_age_shrek = 0;
+movie titanic = select movie();
+movie zero = 0;
+movie one = zero make new movie with 1;
+watch movie(one);
+
+ice_age = 2002;
+shrek = 2001;
+
+watch movie(2024);
+
+does Netflix have (any streaming between ice_age, shrek) belongs to the same saga as 2003? {
+    watch movie(666);
+    does DisneyPlus have (all streaming between ice_age, shrek) belongs to the same saga as 2000? {
+        ice_age_shrek = ice_age make new movie with shrek;
+        watch movie(ice_age_shrek);
+    }
+}
+
+loop scene all streaming between (ice_age_shrek better rated than titanic), (titanic better rated than zero) {
+    titanic = titanic won oscars with ice_age_shrek;
+}
+
+watch movie(titanic);

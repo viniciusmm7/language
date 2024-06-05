@@ -1,0 +1,8 @@
+movie forrest_gump = 1994;
+movie the_matrix = 1999;
+movie inside_out_2;
+inside_out_2 = 2024;
+
+watch movie(forrest_gump);
+watch movie(the_matrix);
+watch movie(inside_out_2);

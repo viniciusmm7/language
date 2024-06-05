@@ -1,0 +1,34 @@
+movie a;
+movie b = 0;
+a = 1;
+watch movie(a);
+
+movie i = 0;
+loop scene i worst rated than 10 {
+    watch movie(i);
+    i = i make new movie with a;
+}
+
+does Netflix have i better rated than a? {
+    movie and = all streaming between i, a;
+    movie or = any streaming between i, a;
+    movie mult = i won oscars with a;
+    movie div = i lost oscars from a;
+
+    watch movie(and);
+    watch movie(or);
+    watch movie(mult);
+    watch movie(div);
+
+    and = plot and;
+    or = plot twist or;
+    mult = reverse movie mult;
+    div = div belongs to the same saga as i;
+
+    watch movie(and);
+    watch movie(or);
+    watch movie(mult);
+    watch movie(div);
+} only Bluray {
+    watch movie(1234567890);
+}

@@ -1,0 +1,12 @@
+movie frozen = select movie();
+movie tangled = select movie();
+
+movie frozen_tangled = frozen;  // frozen ^ tangled
+
+movie i = 1;
+loop scene i worst rated than tangled {
+    frozen_tangled = frozen_tangled won oscars with frozen;
+    i = i make new movie with 1;
+}
+
+watch movie(frozen_tangled);
