@@ -44,5 +44,6 @@ chmod +x run.sh
 ## Compile
 You can compile the code using the following command:
 ```bash
-python3 main.py your_code.mnl
+chmod +x compile.sh
+./compile.sh your_file.mnl
 ```
