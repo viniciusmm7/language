@@ -33,3 +33,16 @@ LOWERCASE = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l
 UPPERCASE = "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z" ;
 DIGIT = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
 ```
+
+## Example
+You can run the following code to see the output of the examples:
+```bash
+chmod +x run.sh
+./run.sh < examples/input.txt
+```
+
+## Compile
+You can compile the code using the following command:
+```bash
+python3 main.py your_code.mnl
+```
