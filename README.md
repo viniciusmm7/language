@@ -3,7 +3,7 @@
 ## Description
 
 - Unary operators: `plot = +`, `plot twist = -`, `reverse movie = not`.
-- Binary operators: `won oscars with = *`, `lost oscars from = /`, `would be nicer with = concatenation`, `make new movie with = +`, `wrong director, sorry = -`, `belongs to the same saga as = ==`, `better rated than = >`, `worst rated than = <`, `any streaming between = or`, `all streaming between = and`.
+- Binary operators: `won oscars with = *`, `lost oscars from = /`, `make new movie with = +`, `wrong director, sorry = -`, `belongs to the same saga as = ==`, `better rated than = >`, `worst rated than = <`, `any streaming between = or`, `all streaming between = and`.
 - Other operators: `does (Netflix | PrimeVideo | Disney+) have ... ? = if`, `only Bluray = else`, `loop scene = while`, `watch movie = print`, `select movie = input`, `movie ... = variable declaration`.
 
 ## Syntax Diagram
